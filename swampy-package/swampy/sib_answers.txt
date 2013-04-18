@@ -1,6 +1,6 @@
 # Text answers from Week 0
 
-# Name:
+# Name: Jenna Gopilan
 
 
 
@@ -12,7 +12,17 @@ Explain what each of the following lines does. Use the terminology you learned f
 	wait_for_user()
 
 Answer:
-
+	from TurtleWorld import *
+Answer: This is importing all of the functions within the TurtleWorld module - making every function accessible. This also means that the namespace is now shared in this new Python file. The imported module and the current Python file cannot have the same names for functions.
+	
+	world = TurtleWorld()
+Answer: Assigning the TurtleWorld function to a variable
+	
+	bob = Turtle()
+Answer: Assigning the Turtle function to a variable 
+	
+	wait_for_user()
+Answer: Calling a function from TurtleWorld. Tells the module to wait for the user to do something.
 
 
 
@@ -21,13 +31,13 @@ Answer:
 These questions pertain to the program you wrote in Week0.
 
 -- What are the arguments of polygon()?  What type is each argument?
-Answer:
+Answer: For the polygon function, the arguments entered are sides and length. Sides and lenght's type is integer.
 
 -- What two turtle functions did you use to draw the sides of the polygon?
-Answer:
+Answer: I used the fd() and the rt() functions to draw the sides of the polygon.
 
 -- What are the arguments for polyline?  What type is each argument?
-Answer:
+Answer: Polyline takes the following arguments: t, n , length, and angle. T stands for the turtle, n is the number of sides, length is the length in pixels for each side, and angle is the angle the turtle turns.
 
 
 
@@ -36,10 +46,10 @@ Answer:
 Suppose you wrote a function, center_circle(), that draws a circle of a given radius around the current location of the turtle and restores the turtle to its starting point.
 
 -- What turtle functions would you use to move the turtle from the center to the edge of the circle and get ready to call the original circle() function?
-Answer:
+Answer: fd(turtle, radius)
 
 -- Suppose the interface of this function requires the turtle to end up in the same place it started, facing in the same direction it started.
-Answer:
+Answer: bk (turtle, radius)
 
 -- What is this type of requirement called?
-Answer:
+Answer: Preconditions and postconditions
